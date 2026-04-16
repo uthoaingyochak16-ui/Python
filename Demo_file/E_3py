@@ -1,0 +1,27 @@
+class Library:
+    def __init__(self):
+        self.booK_names=[
+            {"tittle":"Basic python","available":True},
+            {"tittle":"Machine learning","available":False},
+            {"tittle":"Differential equation","available":True}
+        ]
+    
+    def find(self,target_tittle):
+        # self.target_tittle=target_tittle
+        for val in self.booK_names:
+            if val["tittle"]==target_tittle:
+                print("found your book:",target_tittle)
+                break
+            else:
+                print("It is not found in library.")
+
+    def available(self):
+        print("Books availablity.")
+        for book in self.booK_names:
+            if book["available"] is False:
+                continue
+            print(book["tittle"])
+
+B=Library()
+B.find("Basic python")
+B.available()
