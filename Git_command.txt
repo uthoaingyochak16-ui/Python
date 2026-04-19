@@ -1,0 +1,34 @@
+### Initialize your git
+
+git config --global user.name 'User name'
+git config --global user.email 'your-email@example.com'
+
+git Init
+git add.
+git commit -m"First commmit'
+git remote add origin https://github.com
+git branch -M main
+git push -u origin main
+
+-----------------------------------------------------------------------------------------------------
+### Update and push your code
+
+git add.
+git commit -m'update message'
+git push 
+
+------------------------------------------------------------------------------------------------------------
+### clone your git repository into local file
+
+git clone https://github.com
+
+-----------------------------------------------------------------------------------------------------------
+### local file == git file
+
+git pull origin main
+
+------------------------------------------------------------------------------------------------------------
+### If there have any conflict with git and local file ,we need restart it.
+
+git fetch --all
+git reset --hard origin/main
